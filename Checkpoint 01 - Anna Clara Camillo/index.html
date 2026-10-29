@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="calculadora">
+
+        <h2 class="calculadora__titulo">
+            Calculadora de Compras
+        </h2>
+
+        <p class="calculadora__descricao">
+            Informe o preço e a quantidade para calcular o valor total.
+        </p>
+
+        <form class="calculadora__formulario">
+
+            <label for="preco" class="calculadora__label">
+                Preço unitário:
+            </label>
+            <input
+                type="number"
+                id="preco"
+                class="calculadora__input"
+            >
+
+            <label for="quantidade" class="calculadora__label">
+                Quantidade:
+            </label>
+            <input
+                type="number"
+                id="quantidade"
+                class="calculadora__input"
+            >
+
+            <button type="button" class="calculadora__botao" onclick="calcularTotal()">
+                Calcular total
+            </button>
+
+            <p id="resultado" class="calculadora__resultado">
+                Total da compra:
+            </p>
+
+        </form>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
