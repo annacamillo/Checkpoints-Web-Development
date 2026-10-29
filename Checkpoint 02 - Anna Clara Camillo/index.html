@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placar de Jogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="placar">
+
+        <h1 class="placar__titulo">Placar de Jogo</h1>
+
+        <p class="placar__descricao">
+            Acompanhe a pontuação da sua equipe.
+        </p>
+
+        <output id="pontuacao" class="placar__pontuacao">
+            0
+        </output>
+
+        <button type="button" class="placar__botao" onclick="adicionarPonto()">
+            Adicionar ponto
+        </button>
+
+        <button type="button" class="placar__botao placar__botao--retirar" onclick="retirarPonto()">
+            Retirar ponto
+        </button>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
